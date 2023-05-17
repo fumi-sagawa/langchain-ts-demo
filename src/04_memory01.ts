@@ -9,8 +9,11 @@ export const run = async () => {
   const memory = new BufferMemory();
   const chain = new ConversationChain({ llm: model, memory: memory });
 
-  const res = await chain.call({ input: "こんにちは！ サガワです。" });
-  console.log({ res });
+  const res1 = await chain.call({ input: "こんにちは！ サガワです。" });
+  console.log({ res1 });
+
+  const res2 = await chain.call({ input: "私の名前はなんですか？" });
+  console.log({ res2 });
 };
 
 run();

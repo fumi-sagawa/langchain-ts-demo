@@ -23,7 +23,7 @@ export const run = async () => {
   //２つ目のChain
   const reviewPromptTemplate = new PromptTemplate({
     inputVariables: ["title"],
-    template: `あなたはニューヨーク・タイムズの劇評家です。劇のあらすじを聞いて、その劇の批評を書くのがあなたの仕事です。
+    template: `あなたはニューヨーク・タイムズの批評家です。劇のあらすじを聞いて、その劇の批評を書くのがあなたの仕事です。
  
     劇の概要: {title}
     批評:`,

@@ -1,4 +1,3 @@
-import { OpenAI } from "langchain/llms/openai";
 import { PromptTemplate } from "langchain/prompts";
 
 require("dotenv").config();
