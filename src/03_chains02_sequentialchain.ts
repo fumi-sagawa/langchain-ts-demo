@@ -22,10 +22,10 @@ export const run = async () => {
 
   //２つ目のChain
   const reviewPromptTemplate = new PromptTemplate({
-    inputVariables: ["title"],
+    inputVariables: ["outline"],
     template: `あなたはニューヨーク・タイムズの批評家です。劇のあらすじを聞いて、その劇の批評を書くのがあなたの仕事です。
  
-    劇の概要: {title}
+    劇の概要: {outline}
     批評:`,
   });
   const reviewModel = new OpenAI();
